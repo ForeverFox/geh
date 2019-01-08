@@ -1,0 +1,1425 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans: 100,400|Quicksand:300,400|Roboto+Slab:100,300,400|Roboto:100,300');
+   
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* Globals */
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+} 
+
+body {
+	font-size: 1em;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.618;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding-top: 4em;
+	background-color: #fff;
+}
+
+h2 {
+	font-family: "Roboto Slab", serif;
+	font-size: 2.5em;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: "Roboto Slab", serif;
+	font-size: 1.5em;
+	font-weight: 400;
+	padding: 0 0 2.5rem 0;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.8;
+	padding-bottom: 0.5rem;
+}
+
+h5 {
+	font-family: "Open Sans", sans-serif;
+	padding-bottom: 2.5rem;	
+	text-align: right;
+}
+
+.summary {
+	font-size: 0.85em;
+	font-style: italic;
+}
+
+.inquiries {
+	padding: 0;
+	margin: 0;
+}
+
+.poetry {
+	line-height: 0.66667;
+	padding-bottom: 0.25rem;
+}
+
+.poetry:last-child {
+	padding-bottom: 3rem;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a:link {
+	color: #00bcc9;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #767676;
+}
+
+a:hover {
+	color: #d70c9e;
+}
+
+a:active {
+	color: #e65947;
+}
+
+.page-section {
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 2rem;
+	padding-bottom: 8rem;
+}
+
+.section-container {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	overflow: auto;
+}
+
+.section-container-alt {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #f9f8f4;
+	overflow: auto;
+}
+
+/* Sidebars */
+
+.sidebar-left {
+	width: 20%;
+	position: fixed;
+	top: 15%;
+	left: 0;
+	z-index: 100;
+}
+
+.side-bar-left .sidebar-right img {
+	max-width: 100%;
+}
+
+.sidebar-right {
+	width: 20%;
+	position: fixed;
+	top: 40%;
+	right: 0;
+	z-index: 100;
+}
+
+/* Header */
+.hero {
+	position: relative;
+	width: 100%;
+	background-color: #f9f8f4;
+	height: 100vh;
+}
+
+.hero-content {
+	margin: 0;
+	position: relative;
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+
+.hero-content-centered {
+	position: absolute;
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+}
+
+.content-special {
+	position: absolute;
+	width: 100%;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hero-image {
+	padding-top: 4em;
+	width: 40%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+.hero-image h1 {
+	display: none;
+}
+
+.hero-large {
+	width: 70%;
+	height: 100%;
+	float: left;
+	padding-top: 4em;
+}
+
+.centered-content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+	font-size: 4.236em;
+	font-family: "Roboto Slab", serif;
+	font-weight: 300;
+	line-height: 1.2;
+	width: 100%;
+	padding-left: 25%;
+}
+
+.hero h2 {
+	font-size: 2.618em;
+	font-family: Quicksand, sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	padding-left: 25%;
+}
+
+.hero h3 {
+	font-family: Roboto, sans-serif;
+	font-size: 1.61em;
+	line-height: 1.2;
+	font-weight: 100;
+	font-style: italic;
+	width: 75%;
+	padding-left: 25%;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+/* Navigation */
+
+#navbar {
+	z-index: 100;	
+	position: relative;
+	height: 70px;
+	background-color: hsla(178, 4%, 100%, 0.7);	
+}
+
+.menu {
+	border: 0;
+	max-height: 70px;
+	width: 100%;
+}
+
+#openMenu {
+	cursor: pointer;
+	color: #ffffff;
+	position: absolute;
+	top: 27px;
+	left: 20px;
+	display: none;
+}
+
+.mobile {
+	opacity: 0.95;
+	text-align: left;
+	margin: 0 auto;
+	overflow-y: scroll;
+	transition: all 300ms ease;
+	width: 300px;
+	position: absolute;
+	top: 70px;
+	left: -300px;
+}
+
+.open {
+	opacity: 0.97;
+	display: block;
+	left: 0px;
+}
+
+.mobile li {
+	display: block;
+}
+
+.mobile li a {
+	padding: 12px 8px;
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.overlay {
+	cursor: pointer;
+	width: 100%;
+	height: calc(100% -70px);
+	position: absolute;
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.main-nav {
+	top: 0;
+	right: 0;
+	position: fixed;
+	width: 100%;
+	padding: 0;
+	z-index: 100;
+	background-color: hsla(178, 4%, 100%, 0.7);
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.top-nav img {
+	padding: 0.5rem 0;
+}
+
+ul.top-nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.top-nav li {
+	margin: 0 1em;
+	float: left;
+	padding: 0;
+}
+
+.top-nav li.right {
+	float: right;
+	padding: 0;
+	margin: 0.85em 0.75em;
+}
+
+.nav-about:hover {
+	background-image: url(../img/triangle-magenta-nav.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	color: #000;
+}
+
+.nav-works:hover {
+	background-image: url(../img/triangle-blue-nav.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	color: #000;
+}
+
+.nav-connect:hover {
+	background-image: url(../img/triangle-orange-nav.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	color: #000;
+}
+
+.nav-order:hover {
+	background-image: url(../img/triangle-gray-nav.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	color: #000;
+}
+
+ul.top-nav li {
+	text-align: left;
+	color: #000;
+	text-decoration: none;
+	display: block;
+	font-family: Quicksand, sans-serif;
+	font-size: 0.85rem;
+}
+
+@media screen and (min-width: 768px) {
+	ul.top-nav li {
+		font-size: 1.2rem;
+	}
+}
+
+ul.top-nav li a:link {
+	color: #000;
+}
+
+ul.top-nav li a:visited {
+	color: #000;
+}
+
+ul.top-nav li a:active {
+	color: #000;
+}
+
+/* Dropdown */
+
+li.dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 0.875rem 1rem;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.dropdown {
+	float: right;
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	font-family: Quicksand, sans-serif;
+	font-size: 0.86rem;
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: #f9f8f4;
+	min-width: 9rem;
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 0.75rem 1rem;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Triangles */
+
+.magenta {
+	background-image: url(../img/triangle-magenta-section.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.blue {
+	background-image: url(../img/triangle-blue-section.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.orange {
+	background-image: url(../img/triangle-orange-section.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* About Section */
+
+.portrait {
+	width: 600px;
+}
+
+.portrait img {
+	max-width: 100%;
+	display: block;
+	margin-right: 1em;
+}
+
+/* Works Section */
+
+.works h3 {
+	font-family: "Roboto Slab", serif;
+	font-weight: 400;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+}
+
+.works-container {
+	max-width: 60rem;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
+
+.feature {
+	position: relative;
+	float: left;
+	width: 23.85em;
+	margin: 0 3rem 3rem 3rem;
+}
+
+.feature h3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	text-align: center;
+	display: none;
+} 
+
+.feature:hover h3 {
+	display: block;
+	color: #000;
+}
+
+.published {
+	position: relative;
+	width: 23.85em;
+	height: 23.85em;
+	background-image: url(../img/published.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.published:hover {
+	position: relative;
+	width: 23.85em;
+	height: 23.85em;
+	background-image: url(../img/published-hover.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.current {
+	position: relative;
+	width: 23.85em;
+	height: 23.85em;
+	background-image: url(../img/current.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.current:hover {
+	position: relative;
+	width: 23.85em;
+	height: 23.85em;
+	background-image: url(../img/current-hover.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.poems {
+	position: relative;
+	width: 23.85em;
+	height: 23.85em;
+	background-image: url(../img/poems.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.poems:hover {
+	position: relative;
+	width: 23.85em;
+	height: 23.85em;
+	background-image: url(../img/poems-hover.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.social {
+	position: relative;
+	width: 23.85em;
+	height: 23.85em;
+	background-image: url(../img/social.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.social:hover {
+	position: relative;
+	width: 23.85em;
+	height: 23.85em;
+	background-image: url(../img/social-hover.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+/* Works Sub-sections */
+
+.works-alt {
+	width: 100%;
+}
+
+.works-container-alt {
+	max-width: 55em;
+	margin: 0 auto;
+	padding-left: 0;
+}
+
+@media screen and (min-width: 1024px) {
+	.works-container-alt {
+		padding-left: 4em;
+	}
+}
+
+.works-alt h1 {
+	font-size: 4.236em;
+	font-family: "Roboto Slab", serif;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 6rem 0 0 6rem;
+	padding: 4rem 0;
+}
+
+.feature-alt {
+	position: relative;
+	float: right;
+	max-width: 400px;
+	height: auto;
+	margin: 1rem 0;
+	padding-bottom: 6rem;
+}
+
+/* Anna */
+
+#anna-h1 {
+	font-size: 4em;
+	font-family: "Roboto Slab", serif;
+	font-weight: 300;
+	line-height: 1;
+	color: #000;
+	padding: 0;
+	margin: 0;
+}
+
+@media screen and (min-width: 1024px){
+	#anna-h1 {
+		font-size: 4.25em;
+		padding: 6.25rem 0 0 0;
+	}
+}
+
+
+@media screen and (min-width: 1366px){
+	#anna-h1 {
+		font-size: 6em;
+		padding: 12.5rem 0 0 0;
+
+	}
+}
+
+.anna-slide {
+	width: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+	.anna-slide {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.anna-slide {
+		width: 100%;
+	}
+}
+
+.anna-slide img {
+	max-width: 100%;
+}
+
+#anna-mobile {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 4em;
+	font-family: "Roboto Slab", serif;
+	font-weight: 300;
+	line-height: 1;
+	color: #000;
+	padding: 0;
+	margin: 0;	
+}
+
+@media screen and (min-width: 1024px) {
+	#anna-mobile {
+		display: none;
+	}
+}
+
+.anna {
+	height: 100vh;
+	background-image: url(../img/anna-hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	max-width: 100%;
+}
+
+/* Published, Current, Social, Poems */
+
+.published-hero, .current-hero, .social-hero, .poems-hero {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background-color: #f9f8f4;
+	background-size: cover;
+	background-position: center-top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-bottom: 4em;
+}
+
+.published-hero {
+	background-image: url(../img/published-bg.png);
+}
+
+.current-hero {
+	background-image: url(../img/current-bg.png);
+}
+
+.social-hero {
+	background-image: url(../img/social-bg.png);
+}
+
+.poems-hero {
+	background-image: url(../img/poems-bg.png);
+}
+
+.hero-img {
+	position: absolute;
+	top: 100%;
+	left: 85%;
+	transform: translate(-85%,-100%);
+}
+
+.hero-img img {
+	max-width: 100%;
+}
+
+/* Connect Section */
+
+.feed-container {
+	width: 60%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.feed {
+	float: left;
+	width: 22em;
+	height: auto;
+	margin: 0 1rem 1rem 0;
+}
+
+.connect h3 {
+	font-family: "Roboto Slab", serif;
+	font-size: 1.61em;
+	font-weight: 400;
+}
+
+.email {
+	font-family: Quicksand, sans-serif;
+	font-size: 1em;
+}
+
+.email i {
+	padding-right: 0.5em;
+	font-size: 1.61em;
+}
+
+.email:hover .fa-envelope-o, .email .fa-envelope-open-o {
+	display: none;
+}
+
+.email:hover .fa-envelope-open-o {
+	display: inline;
+}
+
+/* Footer */
+.page-footer {
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2rem 0;
+	background-color: #33302e;
+	font-family: Quicksand, sans-serif;
+	font-size: 1em;
+	color: #f9f8f4;
+}
+
+.page-footer li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 1rem;
+	float: left;
+}
+
+
+.page-footer a:link {
+	color: #f9f8f4;
+	font-size: 1.6em;
+}
+
+
+:focus {
+    outline: none;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/* Mobile */
+
+@media only screen  and (min-width: 300px) and (max-width: 480px), only screen and (min-width: 300px) and (max-device-width: 480px) {
+
+.published-hero img, .current-hero img, .social-hero img, .poems-hero img {
+	display: none;
+}
+
+.page-section h1 {
+	font-size: 3em;
+	margin: 3em 1em;
+}
+
+.hero-content {
+	display: none;
+}
+
+.hero-image {
+	width: 100%;
+	position: relative;
+}
+
+.hero-image img {
+	max-width: 320px;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.hero-image h1 {
+	position: absolute;
+	top: 15%;
+	left: 0;
+	transform: translateY(-15%);
+	z-index: 150;
+	color: #000;
+	display: block;
+	padding: 0;
+	font-size: 3em;
+}
+
+.page-section {
+	width: 100%;
+	padding: 0 1em;
+}
+
+.works-container-alt figure {
+	width: 100%;
+}
+
+.content-special {
+	display: none;
+}
+
+.sidebar-left {
+	width: 33%;
+	position: fixed;
+	top: 33%;
+	left: 0;
+	z-index: 100;
+	display: none;
+}
+
+.side-bar-left img, .sidebar-right img {
+	display: none;
+}
+
+.sidebar-right {
+	display: none;
+	width: 33%;
+	position: fixed;
+	top: 85%;
+	right: 0;
+	z-index: 100;
+}
+
+.feature {
+	width: 17.5em;
+	height: 17.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.published, .published:hover, .current, .current:hover, .social, .social:hover, .poems, .poems:hover {
+	width: 17.5em;
+	height: 17.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.portrait {
+	width: 320px;
+}
+
+
+}
+
+/* Tablet */
+@media only screen  and (min-width: 481px) and (max-width: 767px), only screen and (min-width: 481px) and (max-device-width: 767px) {
+
+.published-hero img, .current-hero img, .social-hero img, .poems-hero img {
+	display: none;
+}
+
+.hero-content {
+	display: none;
+}
+
+.hero-image {
+	width: 100%;
+	position: relative;
+}
+
+.hero-image img {
+	width: 480px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.hero-image h1 {
+	position: absolute;
+	top: 5%;
+	left: 0;
+	transform: translateY(-5%);
+	z-index: 150;
+	color: #000;
+	display: block;
+	padding: 0;
+	font-size: 3.8em;
+}
+
+.content-special {
+	display: none;
+}
+
+.sidebar-left {
+	width: 33%;
+	position: fixed;
+	top: 33%;
+	left: 0;
+	z-index: 100;
+}
+
+.side-bar-left img, .sidebar-right img {
+	width: 150%;
+	height: auto;
+}
+
+.sidebar-right {
+	width: 33%;
+	position: fixed;
+	top: 85%;
+	right: 0;
+	z-index: 100;
+}
+
+.feature {
+	width: 22em;
+	height: 22em;
+	margin: 0 2em;
+	padding: 0;
+}
+
+.published, .published:hover, .current, .current:hover, .social, .social:hover, .poems, .poems:hover {
+	width: 22em;
+	height: 22em;
+}
+
+.portrait {
+	width: 420px;
+}
+
+
+}
+
+/* Laptop */
+@media only screen and (min-width: 768px) and (max-width: 1023px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+.published-hero img, .current-hero img, .social-hero img, .poems-hero img {
+	display: none;
+}
+
+.hero-content {
+	display: none;
+}
+
+.hero-image {
+	width: 100%;
+	position: relative;
+}
+
+.hero-image img {
+	width: 480px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.hero-image h1 {
+	position: absolute;
+	top: 5%;
+	left: 0;
+	transform: translateY(-5%);
+	z-index: 150;
+	color: #000;
+	display: block;
+	padding: 0;
+	font-size: 3.8em;
+}
+
+.content-special {
+	display: none;
+}
+
+.sidebar-left {
+	width: 25%;
+	position: fixed;
+	top: 15%;
+	left: 0;
+	z-index: 100;
+}
+
+.side-bar-left img, .sidebar-right img {
+	width: 150%;
+	height: auto;
+}
+
+.sidebar-right {
+	width: 25%;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	z-index: 100;
+}
+
+.feature {
+	width: 23.85em;
+	height: 23.85em;
+	margin: 0 4em;
+	padding: 0;
+}
+
+.published, .published:hover, .current, .current:hover, .social, .social:hover, .poems, .poems:hover {
+	width: 23.85em;
+	height: 23.85em;
+}
+
+.portrait {
+	width: 420px;
+}
+
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px), only screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+
+.published-hero img, .current-hero img, .social-hero img, .poems-hero img {
+	display: none;
+}
+
+.hero-image {
+	width: 50%;
+}
+
+.hero-content {
+	width: 25%;
+}
+
+.hero-content h1 {
+	padding: 0 0.5em;
+	margin: 0;
+}
+
+.content-special {
+	position: absolute;
+	top: 75%;
+	left: 25%;
+	transform: translate(-25%,-75%);
+}
+
+.feature {
+	width: 18em;
+	height: 18em;
+	margin: 0 1em;
+	padding: 0;
+}
+
+.published, .published:hover, .current, .current:hover, .social, .social:hover, .poems, .poems:hover {
+	width: 18em;
+	height: 18em;
+}
+
+.portrait {
+	width: 480px;
+}
+	
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1600px), only screen and (min-device-width: 1201px) and (max-device-width: 1600px) {
+
+.page-section h1 {
+	font-size: 3.8em;
+}
+
+.published-hero img, .current-hero img, .social-hero img, .poems-hero img {
+	width: 320px;
+}
+
+.hero-image {
+	width: 50%;
+}
+
+.hero-content {
+	width: 25%;
+}
+
+.hero-content h1 {
+	padding: 0 0.5em;
+	margin: 0;
+}
+
+.content-special {
+	position: absolute;
+	top: 75%;
+	left: 25%;
+	transform: translate(-25%,-75%);
+}
+
+.feature {
+	width: 22em;
+	height: 22em;
+	margin: 0 0.5em;
+	padding: 0;
+}
+
+.published, .published:hover, .current, .current:hover, .social, .social:hover, .poems, .poems:hover {
+	width: 22em;
+	height: 22em;
+}
+
+.portrait {
+	width: 520px;
+}
+
+}
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

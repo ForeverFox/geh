@@ -1,0 +1,311 @@
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.figure {
+  width: 300px;
+  height: 300px;
+  padding: 0.5em;
+}
+
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  padding-bottom: 2rem;  
+}
+
+.figure img {
+  max-width: 100%;
+}
+
+.bow-title {
+  width: 100%;
+  font-size: 3em;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.2;
+  color: #000;
+}
+
+.bow-header-text {
+  width: 50%;
+  font-style: italic;
+  line-height: 1.8; 
+}
+
+.main-text {
+  padding: 0.25rem 0;
+}
+
+.credit {
+  font-weight: 600;
+}
+
+.credit, .order {
+  text-align: right;
+  font-style: normal;
+  padding-top: 1rem;
+}
+
+.order {
+  font-size: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.info {
+  font-size: 0.80rem;
+  font-style: normal;
+  padding: 0 0 2rem 0;
+}
+
+.bow-header {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 80vh;
+  background-color: #f9f8f4;
+}
+
+.bow-header-item {
+  position: relative;
+  display: block;
+  width: 66.6666%;
+  height: 80vh;  
+  float: left;
+}
+
+#bowImage {
+  position: relative; 
+  display: block; 
+  width: 33.3333%;
+  height: 80vh;
+  background-image: url(../bow/bodyofwork-header-0.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  float: left;
+}
+
+#bowImage img{
+  max-width: 100%;
+}
+
+.prompt {
+  position: absolute;
+  bottom: 40%;
+  right: 5%;
+  transform: translate(-5%, -40%);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.bow-section {
+  position: relative;
+  width: 66.6666%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.middle-section {
+  position: relative;
+  width: 50%;
+  height: 25vh;
+  background-image: url(../bow/colorbox.png);
+  background-repeat: no-repeat;
+}
+
+.colorbox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 25vh;
+  background-image: url(../bow/colorbox-solid.png);
+  background-repeat: no-repeat;
+}
+
+.triangle-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.triangle-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;  
+}
+
+.tinybox-prompt {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  background-color: #fe9788;
+}
+
+.gallery-title {
+  font-size: 2.25rem;
+  padding: 1rem 0;
+}
+
+#gallery-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+.thumb {
+  float: left;
+  width: 6.25em;
+  margin: 0.5rem;
+}
+
+.thumb img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+/* media queries (plan to use SASS in the future to increase efficiency of these queries and make the entire site more responsive) */
+@media screen and (min-width: 1024px) {
+  .bow-header-text {
+    margin-left: 12%;
+    width: 85%;
+    padding: 1.25rem;
+  }
+
+  .bow-title {
+    font-size: 1.85rem;
+  }
+
+  .main-text, .credit {
+    font-size: 0.8rem;
+    padding-bottom: 0;
+  }
+
+  .bow-title {
+    line-height: 1;
+  }
+
+  .credit {
+    padding: 0;
+  }
+
+  .info {
+    padding: 0;
+    font-size: 0.7rem;
+  }
+
+  .gallery-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .main-text, .bow-header-text, .info {
+    font-size: 0.85rem;
+    line-height: 1.7;  
+    padding: 0.25rem 0;
+   } 
+
+   p.main-text {
+    padding-bottom: 1.25rem;
+   }
+
+  .info {
+    font-size: 0.75rem;
+    font-style: normal;
+    margin: 0;
+  }
+
+  .credit {
+    font-size: 0.75rem;
+    padding: 0;
+   }
+
+  .bow-title {
+    font-size: 2.25rem;
+  }
+
+  .bow-header-text {  
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-text, .credit {
+    font-size: 0.95rem;
+  } 
+  
+  .info {
+    font-size: 0.80rem;
+    font-style: normal;
+    padding: 0;
+  } 
+
+  .bow-title {
+    font-size: 2.35rem;
+  }
+
+  .bow-header-text {
+    font-size: 0.95rem;
+    width: 70%;
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 1680px) {
+  .info {
+    margin: 0;
+  } 
+
+   .main-text {
+    font-size: 1rem;
+   } 
+
+  .bow-title {
+    font-size: 2.75rem;
+  } 
+
+  .bow-header-text {
+    font-size: 1rem;
+    width: 60%;
+    padding-top: 2rem;
+  } 
+
+  .gallery-title {
+    font-size: 2.25rem;
+  }  
+}
+
+@media screen and (min-width: 1920px) {
+  .main-text {
+    font-size: 1.05rem;
+    padding: 0;
+    margin: 0;    
+   } 
+
+  .bow-header-text {
+    font-size: 1rem;  
+    width: 55%;
+    font-style: italic;
+    line-height: 1.8;
+  }
+}
