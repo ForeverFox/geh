@@ -1,0 +1,292 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand:300|Roboto:100,400');
+/* Globals */
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+} 
+
+body {
+	font-size: 1em;
+	font-family: /*"Open Sans",*/ sans-serif;
+	line-height: 1.4;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size: 2.61em;
+	color: black;
+}
+
+h2 {
+	font-family: /*Quicksand,*/ sans-serif;
+	font-size: 1.61em;
+	color: black;
+}
+
+h3 {
+	
+}
+
+ul {
+	
+}
+
+li {
+	
+}
+
+
+p {
+	font-family: /*"Open Sans",*/ sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+main {
+	width: 100%;
+	margin: 0;
+}
+
+.wrapper {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Header */
+ 
+.hero {
+	width: 100%;
+	background-color: #8b8b8b;
+	background-image:url(../images/hero_placeholder.gif);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 100vh;
+}
+
+.hero-content {
+	width: 100%;
+	padding-left: 6.25rem;
+}
+
+.hero-content h1 {
+	max-width: 5.54em;
+	font-size: 11.08em;
+	font-family: /*Roboto, */sans-serif;
+	font-weight: 100;
+	line-height: 1;
+	color: #fff;
+	padding: 12.5rem 0 0 0;
+	margin: 0;
+}
+
+.hero-content h2 {
+	font-size: 4.23em;
+	font-family: /*Quicksand,*/ sans-serif;
+	font-weight: 300;
+	color: #fff;
+	margin: 0;
+	padding: 3.23em 0 0 0;
+}
+
+.hero-content h3 {
+	max-width: 31.25em;
+	font-family: /*Roboto,*/ sans-serif;
+	font-size: 1.61em;
+	font-weight: 300;
+	color: #fff;
+	margin: 0;
+	padding: 0.618em 0 0 0;
+	font-style: italic;
+}
+
+/* Navigation */
+
+.main-nav {
+	top: 0;
+	position: fixed;
+	background-color: hsla(44, 4%, 16%, 0.85);
+	width: 100%;
+	padding: 1.56rem;
+	background-image: url(../images/gh_logo-gray.png);
+	background-repeat: no-repeat;
+	background-position: 1.625em;
+	z-index: 10;
+	border-bottom: 2px solid #272727;
+}
+
+ul.top-nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	color: #fff;
+	overflow: hidden;
+}
+
+ul.top-nav li {
+	margin: 0 5.31em;
+	float: left;
+}
+
+ul.top-nav li a {
+	text-align: left;
+	/* color: #aed2d9; */
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+
+ul.top-nav li a:hover:not(.active) {
+	color: #ccc;
+}
+
+ul.top-nav li.right {
+	float: right;
+	padding-right: 1em;
+}
+
+.name a {
+	color: #fff;
+}
+
+.main-nav a:hover {
+	/* color: #dcdcdc; */
+	color: #fff;
+}
+
+.main-nav a:active {
+	/* color: #d9aeae; */
+	color: #fff;
+}
+
+@media screen and (max-width: 600px){
+    ul.top-nav li.right, 
+    ul.top-nav li {float: none;}
+}
+
+
+/* About Section */
+.about {
+	width: 100%;
+	padding: 4rem 0 6rem 0;
+	height: 100vh;
+}
+
+.portrait {
+	margin: 0 2em 0 0;
+	float: left;
+	width: 37.5em;
+}
+
+.portrait img {
+	max-width: 100%;
+}
+
+/* Works Section */
+.works {
+	width: 100%;
+	padding: 4rem 0 6rem 0;
+	background-color: #dcdcdc;
+}
+
+.feature {
+	float: left;
+	width: 25em;
+	margin: 1em 1em 1em 6.25em;
+}
+
+.feature img {
+	max-width: 100%;
+}
+
+/* Works Sub-sections */
+
+.works-alt {
+	width: 100%;
+	padding: 6rem 0 6rem 0;
+	height: 100vh;
+	background-color: #dcdcdc;
+}
+
+.gallery {
+	width: 100%;
+	margin: 0;
+	padding: 4rem 0 6rem 0;
+	height: 100%;
+	background-color: #dcdcdc;
+}
+
+.thumb {
+	float: left;
+	width: 6.25em;
+	margin: 1rem 1rem 1rem 3rem;
+}
+
+.thumb img {
+	max-width: 100%;
+}
+
+.BodyofWork {
+	display: none;
+	max-width: 100%;
+}
+
+.BodyofWork h1 {
+	max-width: 5.54em;
+	font-size: 11.08em;
+	font-family: /*Roboto, */sans-serif;
+	font-weight: 100;
+	line-height: 1;
+	color: #fff;
+	padding: 12.5rem 0 0 0;
+	margin: 0;
+}
+
+.slide {
+	max-width: 100%;
+}
+
+/* Connect Section */
+.connect {
+	width: 100%;
+	padding: 4rem 0 6rem 0;
+	position: relative;
+	height: 100vh;
+}
+/* Footer */
+.page-footer {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	clear: both;
+	padding: 4rem 0;
+	background-color: #201f1f;
+	font-family: /*Quicksand, */sans-serif;
+	font-size: 1em;
+	color: white;
+}
